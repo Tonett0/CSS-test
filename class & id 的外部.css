@@ -1,0 +1,39 @@
+.food{
+    color:orangered;
+    background-color:blue;
+}
+
+
+.background{
+    background-color: bisque;
+}
+
+.man{
+    color:rebeccapurple;
+}
+
+*{
+    background-color: antiquewhite;
+}
+
+#id,h2
+{
+    color:seagreen;
+    background-color: red;
+}
+
+ul li{
+    background-color: brown;
+}
+
+ol a{
+    background-color: burlywood;
+}
+
+[type]{
+    background-color:violet;
+}
+
+p:hover{
+    background-color: gray;
+}

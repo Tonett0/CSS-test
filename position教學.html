@@ -1,0 +1,38 @@
+<!DOCTYPE html>                           
+<html>
+    <head>                               
+        <meta charset="UTF-8"/>          
+        <title>position練習</title>          
+    </head>
+    <body style="height:1500px"> 
+        <a href="index.html">首頁</a>                             
+        <!--position:固定定位-->
+        <br/>
+        <h1>定位教學</h1>
+        <div style="width:80px; height:80px; background-color:blue;">第一個方塊甚麼都沒設定</div>
+        <div style="position:fixed; ; width:80px; height:80px; background-color:green;">第二個方塊只有設定漂浮的狀態</div>
+        <div style="position:fixed; top:40px; width:80px; height:80px; background-color:gold;">第三個方塊距離頁面頂端20</div>
+        <!--fixed=固定定位的意思，會獨立一層，下方內容會往上移；
+            如果沒有設定上下左右，沒設定時只會漂浮在原本該出現的地方-->
+        
+        <!--position:相對定位-->
+        <br/><br/><br/><br/><br/><br/><br/>
+        <div style="position:relative;width:120px; height:120px; background-color:red;">原本位置</div>
+        <div style="position:relative;left:200px; width:120px; height:120px; background-color:red;">原本位置要在現在位置的左邊200px</div>
+        <div style="width:120px; height:120px; background-color:orange;">基本位置</div>
+
+        <!--相對定位與固定定位的差異:相對定位原本的位置會存在，不會飄浮起來後位置被吃掉
+        有設定相對定位的東西會蓋過沒有設定的東西-->
+
+        <br/><br/><br/><br/><hr/>
+    
+        <!--絕對定位-->
+        <div style="position:relative;padding:30px ; border:5px solid rebeccapurple; ">
+            <!--外層如果有設定相對定位，內層的絕對定位就會依照外層當作基準-->
+          <div style="padding:30px; border:5px solid brown;">
+                <div style="position:absolute; top:0px;width:40px;height:40px;background-color:royalblue">
+                 <!--加了絕對定位之後就代表自己獨立一層，top=0px與頂端0距離，不會隨著頁面移動-->
+        </div>  
+        
+    </body>
+</html>

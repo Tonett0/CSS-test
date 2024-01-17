@@ -1,0 +1,155 @@
+<!DOCTYPE html>                           <!--告訴瀏覽器附檔名是html-->
+<html>
+    <head>                                <!--放網頁的資訊-->
+        <meta charset="UTF-8"/>      <!--(UTF-8)代表使用的網頁編碼-->
+        <meta name="description" content="小白的網站裡面有很多影片"/>    <!--關於網站內的描述-->
+        <meta name="author" content="小白"/>                           <!--作者的資訊-->
+        <meta name="keywords" content="小白, html, 教學"/>              <!--搜尋網頁的關鍵字-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>         <!--因應各種裝置，調整呈現的畫面-->
+
+        <title>小白的網頁</title>          <!--網站框的標題-->
+    </head>
+    <body>                                <!--內容框架-->
+        嗨嗨
+        <h1>                              <!--h代表標題，數字代表層級，1是最大，6是最小，數字越大字體越小-->
+            哈囉我是小白
+        </h1>
+
+        <h2>第一篇文章</h2>
+        <p>嗨嗨嗨</p>                     <!--第二個標題內的內容-->    
+
+        <h2>第二篇文章</h2>
+        <p><b>喔喔喔</b></p>               <!--b粗體-->
+        <p><i>喔喔喔</i></p>               <!--i粗體-->
+        <br/>                             <!--換行-->
+        <hr/>                             <!--加上分隔線-->
+        <p><b>喔喔喔</b><i>喔喔喔</i></p>   <!--合再一起寫-->
+
+
+         <!--連結網址的用法-->
+        <a href="https://www.google.com/">google首頁</a>
+        <!--連結網址的用法+這段連結的名稱-->
+        <a href="第二頁.html">第二頁</a>
+        <!--連結自己設計的網頁，只需要「檔名.html」-->
+        <a href="dir/第三頁.html">第三頁</a>
+        <!--不同資料夾下連結自製的網頁，需要「dir+/」+「檔名.html」-->
+        <!--<a href="../index.html">.首頁</a>-->
+        <!--不同資料夾回到主頁，需要「..+/」+「檔名.html」-->
+
+
+        <!--連結圖片的用法-->
+        <a href="2.png">圖片</a>    <!--連結同個資料夾下的圖片-->
+        <a href="dir/12.png">第三頁的圖片</a>   <!--連結不同個資料夾下的圖片-->
+        <a href="css.html">CSS練習</a>
+        <a href="position教學.html">position練習</a>
+        <a href="opacity & border-radius.html">opacity & border-radius練習</a>
+        <a href="style的用法.html">style的用法</a>
+        <a href="引入外部CSS檔案.html">引入格式的用法</a>
+        <a href="Class & id.html">Class & id的用法</a>
+        <br/>
+        <!--網頁內放圖片的用法-->
+        <!--連結外部網路上圖片-->
+        <img src="data:image/jpeg;base64,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" width="200">
+        <!--連結內部圖片-->
+        <img src="2.png" width="100">
+        <img src="dir/12.png" width="100">
+        <br/>
+        <!--崁入影片-->
+        <!--自己的影片-->
+        <video src="2.MP4"controls width="400"></video>
+         <!--外部網路影片-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CLUPkcLQm64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+
+        <!--列表-->
+        <ul>  <!--標題前方是黑點-->
+            <li>google</li>
+            <li>facebook</li>
+        </ul>
+
+        <ol>  <!--標題前方是數字排序-->
+            <li>ig</li>
+            <li>line</li>
+        </ol>
+        <ol type="A"><!--標題依照指定樣式排序-->
+            <li>shopee</li>
+            <li>facebook</li>
+        </ol>
+
+        <!--表格-->
+        <table width="200" height="200">
+            <tr>
+                <td>日期</td>
+                <td>科目</td>
+                <td>分數</td>
+            </tr>
+            <tr>
+                <td>7/27</td>
+                <td>數學</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>7/28</td>
+                <td>英文</td>
+                <td>80</td>
+            </tr>
+        </table>
+
+
+        <!--容器div，span-->
+        <!--div可以一次把div內所有格式更改-->
+        <div style="color:red">
+            <ul>
+                <li>google</li>
+                <li>facebook</li>
+            </ul>
+    
+            <ol>
+                <li>ig</li>
+                <li>line</li>
+            </ol>
+            <ol type="A">
+                <li>shopee</li>
+                <li>facebook</li>
+            </ol>
+
+            <table width="200" height="200">
+                <tr>
+                    <td>日期</td>
+                    <td>科目</td>
+                    <td>分數</td>
+                </tr>
+                <tr>
+                    <td>7/27</td>
+                    <td>數學</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>7/28</td>
+                    <td>英文</td>
+                    <td>80</td>
+                </tr>
+            </table>   
+        </div>
+
+        <!--div VS span-->
+        <span>span1</span>
+        <span>span2</span><!--不管輸入多少內容，都會在同一行-->
+        <hr/>
+        <div>div1</div>
+        <div>div2</div><!--一個內容就是一行-->
+
+
+        <!--html標籤-->
+        <input type="text"/>  <!--從type可改變輸入的類型-->
+        <br/><br/>
+        <input type="text" placeholder="請輸入帳號"/><!--placeholder的功能是讓輸入框內出現浮水印-->
+        <br/><br/>
+        <input type="password" placeholder="請輸入密碼"/><!--改變type讓輸入的內容隱藏-->
+        <br/><br/>
+        <textarea>哈哈</textarea><!--輸入長篇內容-->
+        <br/><br/>
+        <input type="color"/>
+
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>                           
+<html>
+    <head>                               
+        <meta charset="UTF-8"/>          
+        <title>CSS練習</title>          
+    </head>
+    <body>                                
+         <!--color-->
+         <a href="index.html">首頁</a>   
+         <div style="color:red"><!--顏色表示有三種: black、#000000、rgb(0, 0, 0)-->
+            <h1 style="color:blueviolet">css教學</h1><!--如果div後有設定，以最裡面的設定為主-->
+            <p style="background-color: greenyellow;">這是一個段落</p>
+            <p style="border:5px dashed orange ;max-width:200px;">我在練習CSS</p>
+            <p style="border:5px dashed rgb(107, 74, 205) ;">我在練習CSS</p>
+            <!--border跟其他語法不同，需要輸入三個參數；max-width會固定寬度，否則預設是依照網頁調整-->
+         </div>
+
+
+        <!--padding內部&margin外部-->
+         <div style="color:black";>
+            <h3 style="color:saddlebrown; padding:20px; background-color:gray;">padding基本設定</h3>      
+            <!--padding只有設定一個參數，上右下佐都會是同樣的-->
+            <h3 style="color:rgb(55, 140, 82); padding-top:20px; background-color:gray; margin-bottom:30px;">padding+margin只設定一邊的值</h3>      
+            <!--padding只有設定一邊，就只會改那一邊的參數-->
+            <h3 style="color:rgba(183, 31, 79, 0.677); padding:20px; background-color:gray;margin:60px;">padding只設定一個值+margin設定一個值</h3>      
+            <p style="padding:50px 60px 90px 100px; background-color: rgb(158, 76, 158);">padding四邊都設定個別值</p>
+            <!--padding設定四個參數-->
+            <p style="padding:50px 60px 90px 100px;background-color: violet;margin:20px 60px 50px 30px">padding四邊都設定值+marging四邊都設定值</p>
+            <!--padding跟margin都設定四個參數-->
+            <!--padding只能輸入正數；margin可輸入負數-->
+         </div>
+
+
+         <!--float-->
+         <img src="2.png" width=200px>
+         <p style="float:left">這段文字會在圖片的左方</p>            <!--使文字區塊與圖片在同個層面，讓「文字」飄在左方-->
+         <div>
+            <img src="2.png" width=200px style="float:left">       <!--使文字區塊與圖片在同個層面，讓「圖片」飄在左方-->
+            <p style="float:left; background-color: brown;">這段文字會在圖片的右方</p>
+        </div>
+
+        <img src="2.png" width=200px; style="padding:1px; margin:50px; color:red" >
+        <div style="background-color: red;padding:1px;max-width:180px">
+            <ul width=200px>
+                <li>姓名,科目,成績</li>
+                <li>陳，數學,100</li>
+                <li>王，美術,90</li>
+            </ul>
+        </div>
+         <br/><br/><br/><br/><br/><br/>
+
+
+        <!--display-->
+        <div style="color:red">
+          <p>會換行</p>
+          <p>會換行</p>
+          <span>同一行</span>
+          <span>同一行</span>
+        </div>
+          <br/>
+        <div style="color:blue">              <!--藉由改變display中 "block" or "inline"，變換顯示方式-->
+          <p display="block">會換行</p>
+          <p display="block">會換行</p>
+          <span display="inline">同一行</span>
+          <span display="inline">同一行</span>
+        </div>
+
+    </body>       
+</html>
